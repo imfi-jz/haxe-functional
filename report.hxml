@@ -1,0 +1,6 @@
+--cmd bin\\index.html
+--cmd start cmd /k java -jar bin\\main.jar
+--cmd start cmd /k neko bin\\main.n
+#--cmd start cmd /k bin\\cs\\bin\\Entry.exe
+--cmd start cmd /k java -jar bin\\java\\Entry.jar
+--cmd start cmd /k bin\\cpp\\Entry.exe

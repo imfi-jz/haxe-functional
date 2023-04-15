@@ -1,0 +1,30 @@
+--library utest
+
+--class-path src
+--main nl.imfi_jz.test.functional.performance.Entry
+
+--dce full
+
+--each
+all_targets.hxml
+--next
+report.hxml
+
+--next
+all_targets_nfi.hxml
+--next
+report.hxml
+
+--next
+all_targets_fm.hxml
+--next
+report.hxml
+
+--next
+all_targets_nfi_fm.hxml
+--next
+report.hxml
+
+--next
+-D no-functional-inline
+--interp

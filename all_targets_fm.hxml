@@ -1,0 +1,48 @@
+--next
+-D functional-mutable
+--js bin/main.js
+
+--next
+-D functional-mutable
+--jvm bin/main.jar
+
+--next
+-D functional-mutable
+--php bin/php
+
+--next
+-D functional-mutable
+--python bin/main.py
+
+--next
+-D functional-mutable
+--swf bin/main.swf
+
+--next
+-D functional-mutable
+--cppia bin/main.cppia
+
+--next
+-D functional-mutable
+--lua bin/main.lua
+
+--next
+-D functional-mutable
+--neko bin/main.n
+
+--next
+-D functional-mutable
+--cs bin/cs
+
+--next
+-D functional-mutable
+--java bin/java
+
+--next
+-D functional-mutable
+--hl bin/main.hl
+
+--next
+-D functional-mutable
+--cpp bin/cpp
+

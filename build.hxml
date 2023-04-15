@@ -1,0 +1,48 @@
+--class-path src
+--main nl.imfi_jz.functional.Main
+
+--dce full
+#-D no-functional-inline
+-D functional-mutable
+
+--each
+--interp
+--debug
+
+--next
+--js bin/main.js
+
+--next
+--jvm bin/main.jar
+
+--next
+--php bin/php
+
+--next
+--python bin/main.py
+
+--next
+--swf bin/main.swf
+
+--next
+--cppia bin/main.cppia
+
+--next
+--lua bin/main.lua
+
+--next
+--neko bin/main.n
+
+--next
+--cs bin/cs
+
+--next
+-D no-functional-inline
+--java bin/java
+
+--next
+--hl bin/main.hl
+
+--next
+--cpp bin/cpp
+

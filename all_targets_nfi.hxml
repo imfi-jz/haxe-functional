@@ -1,0 +1,48 @@
+--next
+-D no-functional-inline
+--js bin/main.js
+
+--next
+-D no-functional-inline
+--jvm bin/main.jar
+
+--next
+-D no-functional-inline
+--php bin/php
+
+--next
+-D no-functional-inline
+--python bin/main.py
+
+--next
+-D no-functional-inline
+--swf bin/main.swf
+
+--next
+-D no-functional-inline
+--cppia bin/main.cppia
+
+--next
+-D no-functional-inline
+--lua bin/main.lua
+
+--next
+-D no-functional-inline
+--neko bin/main.n
+
+--next
+-D no-functional-inline
+--cs bin/cs
+
+--next
+-D no-functional-inline
+--java bin/java
+
+--next
+-D no-functional-inline
+--hl bin/main.hl
+
+--next
+-D no-functional-inline
+--cpp bin/cpp
+

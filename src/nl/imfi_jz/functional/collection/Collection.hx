@@ -178,6 +178,9 @@ class KeyValueCollection<K, V> {
         .setRemoveFunction(map.remove)
         #end;
     }
+    public static function fromIterator<T>(iterator:Iterator<T>):KeyValueCollection<Int, T> {
+        return fromArray([for(item in iterator) item]);
+    }
 
     public function toArray():Array<V> {
         final array = [];
@@ -324,6 +327,9 @@ abstract Pairs<K, V>(KeyValueCollection<K, V>) {
     @:from private static inline function fromArray<T>(array:Array<T>):Pairs<Int, T> {
         return new Pairs<Int, T>(KeyValueCollection.fromArray(array));
     }
+    @:from private static inline function fromIterator<T>(iterator:Iterator<T>):Pairs<Int, T> {
+        return new Pairs<Int, T>(KeyValueCollection.fromIterator(iterator));
+    }
 
     @:to private inline function toArray():Array<V> {
         return this.toArray();
@@ -436,6 +442,9 @@ abstract Multitude<T>(KeyValueCollection<Int, T>) {
     }
     @:from private static inline function fromArray<T>(array:Array<T>):Multitude<T> {
         return new Multitude<T>(KeyValueCollection.fromArray(array));
+    }
+    @:from private static inline function fromIterator<T>(iterator:Iterator<T>):Multitude<T> {
+        return new Multitude<T>(KeyValueCollection.fromIterator(iterator));
     }
 
     @:to private inline function toArray():Array<T> {
